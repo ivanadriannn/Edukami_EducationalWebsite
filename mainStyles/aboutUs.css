@@ -1,0 +1,266 @@
+body{
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    overflow: none;
+    font-family: 'Combo', cursive;
+    margin:0;
+}
+
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+        min-height:90px;
+        border-color: black;
+        border-width: 0px 2px 2px 2px;
+        border-style: solid;
+        border-radius: 0 0 85px 85px;   
+        background-color: white;
+        margin-bottom: 10%;
+    }
+
+        .back{
+            position:absolute;
+            left:40px;
+            top:25px;
+            height:50px;
+            width:100px;
+        }    
+
+            .arrow{
+                height: 90%;
+                width: 90%;
+                background: none;
+            }
+
+        .back:hover{
+            background-color: black;
+            cursor: pointer;
+        }
+
+        .name{
+            height:90px;
+            width:40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .logo_frame{
+                height:70px;     
+                width:30%;
+            }
+
+                .logo{
+                    height: 100%;
+                    width: 100%;
+                }
+
+            .website_name{
+                font-family: 'Delius Unicase', cursive;
+                margin-left: 5%;
+                font-size: 32px;    
+                font-weight: 400;
+            }
+
+.options_title{
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 10%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Delius Unicase', cursive;
+}
+
+.options_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:150px;
+    width:60%;
+    margin: auto;
+    padding: 20px 30px;
+    background-color: lightgray;
+}
+
+    .options_box p{
+        margin: 0;
+        text-align: center;
+        font-size: 32px;
+    }
+
+.aboutUs_image{
+    height: 200px;
+    width: 1000px;
+}
+
+    .footer{
+        width:100%;
+        height:230px;                 
+        background-color: #D9D9D9;
+        display: grid;
+        grid-template-columns: 49.5% 1% 49.5%;
+    }
+
+        .footer_contact{    
+            height: 230px;
+        }
+
+            .footer_contact_title{
+                margin-left: 3%;
+                margin-bottom: 5%;
+                font-size: 25px;
+            }
+
+            .footer_social_media{
+                height:15%;
+                width:60%;  
+                margin-left: 12%;   
+                margin-bottom: 3%;
+                display: flex;
+                align-items: center;
+            }
+
+                .footer_icon_frame{
+                    margin-left:3%;
+                    height: 100%;
+                    width: 15%;
+                }
+
+                    .footer_icon{
+                        object-fit: contain;
+                        height:100%;
+                        width:100%;
+                    }
+
+                .footer_handle{
+                    margin-left: 5%;    
+                    font-size:20px;
+                }
+                
+        
+        .line_break{
+            width: 20%;
+            height:230px;
+            background-color: black;
+        }
+
+
+        .footer_others{
+            height: 230px;  
+        }
+
+            .footer_others li{
+                list-style: none;
+                text-align: right;
+                justify-content: center;
+                margin-top:15%;
+                margin-right: 5%;
+            }
+
+                .footer_others ul{
+                    line-height: 35px;
+                    font-size: 22px;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 768px){
+    .header{
+        min-height:90px;
+    }
+
+        .name{
+            height:90px;
+            display: flex;
+        }
+
+            .logo_frame{
+                height:70px;     
+                width: 10%;  
+            }
+
+            .website_name{
+                margin-left: 2%;    
+                font-size: 35px;    
+                font-weight: 400;
+            }
+
+        .back{
+            position:absolute;
+            left:45px;
+            top:25px;
+            height:50px;    
+            width:90px;
+        }    
+
+    
+
+        .footer{
+            margin-top: 15%;
+            height:350px;                 
+        }
+    
+            .footer_contact{    
+                height: 350px;
+            }
+    
+                .footer_contact_title{
+                    margin-left: 3%;
+                    margin-bottom: 1%;  
+                    margin-top: 2%; 
+                    font-size: 40px;    
+                }
+    
+                .footer_social_media{
+                    height:20%;
+                }
+    
+                    .footer_icon_frame{
+                        margin-left:3%;
+                        height: 100%;
+                        width: 15%;
+                    }
+    
+    
+                    .footer_handle{
+                        margin-left: 2%;    
+                        font-size:35px;
+                    }
+                    
+            
+            .line_break{
+                width: 20%; 
+                height:350px;
+                background-color: black;
+            }
+    
+    
+            .footer_others{
+                height: 350px;          
+            }
+    
+                .footer_others li{
+                    margin-top:10%;
+                    margin-right: 5%;
+                }
+    
+                    .footer_others ul{
+                        line-height: 55px;  
+                        font-size: 35px;
+                    }
+
+}

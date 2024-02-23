@@ -1,0 +1,409 @@
+body{
+    background-color: white ;
+    overflow: none;
+    font-family: 'Combo', cursive;
+    margin:0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height:90px;
+    border-color: black;
+    border-width: 0px 4px 4px 4px;
+    border-style: solid;
+    border-radius: 0 0 45px 45px;
+    background-color: white;
+    z-index: 100;
+}
+
+    .back{
+        min-height: 40px;
+        margin-left: 3%;
+        width:100px;    
+        display: flex;
+        justify-self: flex-start;
+    }
+
+        .arrow{
+            height: 40px;
+            width: 90px;
+            background: none;
+        }
+
+    .back:hover{
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .name{
+        display: flex;
+        align-items: center;
+        flex:2;
+        margin-left: 10%;
+        margin-right: 10%;
+        min-height:90px;
+    }
+
+        .logo{
+            margin-left: 3%;
+            height:70px;
+            object-position: center;
+            object-fit: cover;
+            border:none;
+        }
+
+        .web_name{
+            font-family: 'Delius Unicase', cursive;
+            margin-left: 3%;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+    .action{
+        min-height:90px;
+        flex:1;
+        margin-right:5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+        .icon_frame{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width:100%;
+        }
+
+            .icon_image_frame{
+                height: 35px;
+                width: 35px;
+                cursor: pointer;
+            }
+
+                .icon_image{
+                    height: 100%;
+                    width: 100%;
+                }
+
+
+
+.profile_wallpaper{
+    margin-top: -5%;
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background-image: url("profile_images/wallpaper.jpg");
+    background-position:top;
+    background-size: cover;
+    border-bottom: 8px solid black;
+}
+
+    .profile_picture_frame{
+        position: absolute;
+        bottom:-120px;
+        left:20px;
+        height: 200px;
+        width:200px;
+        border-radius:100px;
+        background-color: black;
+    }
+
+        .profile_picture{
+            height: 200px;
+            width:200px;
+            border-radius: 100px;
+        }
+
+    .edit_profile{
+        color: white;
+        position: absolute;
+        font-size: 36px;
+        right:35px;
+        top: 60px;
+    }
+
+    .date_joined{
+        position: absolute;
+        font-size:30px;
+        right:0;
+        bottom: -53px;
+        padding: 5px 12px;
+    }
+
+.profile_info{
+    height: 130px;
+    width:280px;
+    margin-left: 13%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: gray; */
+}
+
+    .profile_name{
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    .profile_details{
+        font-size: 23px;
+        color: black;
+    }
+
+
+.info{
+    display: flex;
+    margin-bottom: 3%;
+}
+
+    .description{
+        margin-top: 3%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        padding: 15px 30px;
+        width: 700px;
+        height: 200px;
+        background-color: #D9D9D9;
+    }
+
+        .desc_text{
+            margin: 0;
+            font-size: 32px;
+        }
+
+    .photos{
+        height: 300px;
+        width:700px;
+        margin-top: 1%;
+        margin-left: 5%;
+        background-color: tomato;
+    }
+
+.break{
+    border: black 2px dashed;
+    margin-bottom: 3%;
+}
+
+.collage_title{
+    font-size: 40px;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+.collage{
+    margin: auto;
+    margin-bottom: 5%;
+    height: 300px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%; 
+}
+
+    .collage_frame{
+        background-color: thistle;
+    }
+
+    .collage_image{
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer{
+        width:100%;
+        height:230px;                 
+        background-color: #D9D9D9;
+        display: grid;
+        grid-template-columns: 49.5% 1% 49.5%;
+    }
+
+        .footer_contact{    
+            height: 230px;
+        }
+
+            .footer_contact_title{
+                margin-left: 3%;
+                margin-bottom: 5%;
+                font-size: 25px;
+            }
+
+            .footer_social_media{
+                height:15%;
+                width:60%;  
+                margin-left: 12%;   
+                margin-bottom: 3%;
+                display: flex;
+                align-items: center;
+            }
+
+                .footer_icon_frame{
+                    margin-left:3%;
+                    height: 100%;
+                    width: 15%;
+                }
+
+                    .footer_icon{
+                        object-fit: contain;
+                        height:100%;
+                        width:100%;
+                    }
+
+                .footer_handle{
+                    margin-left: 5%;    
+                    font-size:20px;
+                }
+                
+        
+        .line_break{
+            width: 20%;
+            height:230px;
+            background-color: black;
+        }
+
+
+        .footer_others{
+            height: 230px;  
+        }
+
+            .footer_others li{
+                list-style: none;
+                text-align: right;
+                justify-content: center;
+                margin-top:15%;
+                margin-right: 5%;
+            }
+
+                .footer_others ul{
+                    line-height: 35px;
+                    font-size: 22px;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 768px){
+    .header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+        .back{
+            min-height: 50px;
+            margin-left: 35%;
+            width:100px;       
+        }
+    
+            .arrow{
+                height: 40px;
+                width: 90px;
+            }
+    
+    
+        .name{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .logo{
+                height:80px;
+                object-position: center;
+                object-fit: cover;
+                border:none;
+            }
+
+            .web_name{
+                margin-left: 2%;
+                font-size: 45px;
+            }
+
+        .action{
+            min-height:90px;
+            flex:1;
+            margin-right:2%;
+            justify-content: right;
+            display: grid;
+            grid-template-columns: 90px 90px 90px;
+            column-gap: 10px;
+        }
+
+            .title{
+                font-size: 65px;
+                font-weight: 700;
+                margin-left: 35%;  
+                margin-bottom: 5%;
+            }
+
+            .icon_image_frame{
+                height: 75px;
+                width: 75px;
+            }
+
+    .footer{
+        height:350px;                 
+    }
+
+        .footer_contact{    
+            height: 350px;
+        }
+
+            .footer_contact_title{
+                margin-left: 3%;
+                margin-bottom: 1%;  
+                margin-top: 2%; 
+                font-size: 40px;    
+            }
+
+            .footer_social_media{
+                height:20%;
+            }
+
+                .footer_icon_frame{
+                    margin-left:3%;
+                    height: 100%;
+                    width: 15%;
+                }
+
+
+                .footer_handle{
+                    margin-left: 2%;    
+                    font-size:35px;
+                }
+                
+        
+        .line_break{
+            width: 20%; 
+            height:350px;
+            background-color: black;
+        }
+
+
+        .footer_others{
+            height: 350px;          
+        }
+
+            .footer_others li{
+                margin-top:10%;
+                margin-right: 5%;
+            }
+
+                .footer_others ul{
+                    line-height: 55px;  
+                    font-size: 35px;
+                }
+}
